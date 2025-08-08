@@ -1,10 +1,7 @@
 package com.viictoramorim.DesafioTecn_PicPay.entity;
 
 import jakarta.persistence.*;
-import lombok.AllArgsConstructor;
-import lombok.Getter;
-import lombok.NoArgsConstructor;
-import lombok.Setter;
+import lombok.*;
 
 import java.math.BigDecimal;
 import java.time.LocalDateTime;
@@ -15,7 +12,7 @@ import java.time.LocalDateTime;
 @NoArgsConstructor
 @Table
 @Entity(name = "transacao")
-
+@Builder
 public class Transacoes {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
