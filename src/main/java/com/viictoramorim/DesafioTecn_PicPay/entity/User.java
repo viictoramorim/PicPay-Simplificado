@@ -27,4 +27,5 @@ public class User {
     private String senha;
     @OneToOne(mappedBy = "user", cascade = CascadeType.ALL)
     private Carteira carteira;
+    private TipoUser tipoUser;
 }
