@@ -6,7 +6,6 @@ import com.viictoramorim.DesafioTecn_PicPay.entity.TipoUser;
 import com.viictoramorim.DesafioTecn_PicPay.entity.Transacoes;
 import com.viictoramorim.DesafioTecn_PicPay.entity.User;
 import com.viictoramorim.DesafioTecn_PicPay.exceptions.BadResquestException;
-import com.viictoramorim.DesafioTecn_PicPay.infrastructure.clients.NotificacaoClient;
 import com.viictoramorim.DesafioTecn_PicPay.repository.TransacaoRepository;
 import jakarta.transaction.Transactional;
 import lombok.RequiredArgsConstructor;
@@ -17,7 +16,7 @@ import java.math.BigDecimal;
 
 @Service
 @RequiredArgsConstructor
-public class TransferenciasService {
+public class TransacaoService {
 
     private final UserService userService;
     private final AutorizacaoService autorizacaoService;
